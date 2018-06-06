@@ -1,0 +1,41 @@
+
+Clover EFI installer log - Mon Apr 16 16:40:08 IST 2018
+Installer version: v2.4k r4411 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *240.1 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:           Linux Filesystem                         119.9 GB   disk0s2
+   3:           Linux Filesystem                         30.0 GB    disk0s3
+   4:                 Apple_APFS Container disk1         90.0 GB    disk0s4
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +90.0 GB    disk1
+                                 Physical Store disk0s4
+   1:                APFS Volume HSR                     75.0 GB    disk1s1
+   2:                APFS Volume Preboot                 20.9 MB    disk1s2
+   3:                APFS Volume Recovery                517.8 MB   disk1s3
+   4:                APFS Volume VM                      3.2 GB     disk1s4
+
+/dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *7.9 GB     disk2
+   1:       Microsoft Basic Data 8GB                     7.9 GB     disk2s1
+
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/HSR/EFIROOTDIR/EFI folder to /Volumes/HSR/EFI-Backups/r4411/2018-04-16-16h40/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
